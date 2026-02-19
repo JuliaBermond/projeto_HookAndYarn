@@ -1,0 +1,14 @@
+{
+  "name": "hookandyarn-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=apps/backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
