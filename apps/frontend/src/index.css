@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: rgb(241, 226, 226);
+  --color-secondary: rgb(245, 199, 199);
+  
+  --color-text-main: rgb(80, 77, 77);
+  --color-bg-light: #fff9f9;
+
+  --radius-sm: 0.4rem;
+  --radius-md: 0.6rem;
+  --radius-lg: 1rem;
+  --radius-xl: 2rem;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Lora", sans-serif;
+  color: var(--color-text-main);
+  overflow-x: hidden;
+}

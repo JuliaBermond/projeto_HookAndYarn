@@ -1,0 +1,48 @@
+.wrapper {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.withBackground {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("/landingPage.jpg");
+  background-size: cover;
+  background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.card {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-xl);
+
+  padding: 3rem 4rem;
+  text-align: center;
+
+  max-width: 32rem;
+  width: 90%;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+

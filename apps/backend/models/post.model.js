@@ -6,8 +6,8 @@ const PostSchema = mongoose.Schema({
     ref: "User",
     required: true,
   },
-  title: { type: String, required: true, minlength: 3 },
-  body: { type: String, required: true, minlength: 10 },
+  title: { type: String, required: true, minlength: 3},
+  body: { type: String, required: true, minlength: 10},
   tags: [String],
   image: { type: String, required: false },
 });

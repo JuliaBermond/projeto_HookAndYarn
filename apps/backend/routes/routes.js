@@ -10,8 +10,5 @@ const router = Router();
 router.use("/users", userRouter);
 router.use("/auth", authRouter);
 router.use("/posts", authMiddleware,  postRouter);
-// router.use("/posts", postRouter);
-
-
 
 export default router;
