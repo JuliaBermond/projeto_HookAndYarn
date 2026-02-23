@@ -1,0 +1,120 @@
+.patternWrapper {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.imageButton {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.imageWrapper:hover .imageButton {
+  opacity: 1;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info li{
+  font-weight: bold;
+  color: #db7070;
+}
+
+.creatorLink {
+  text-decoration: none;
+  color: #db7070;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    text-decoration 0.2s ease;
+}
+
+.creatorLink:hover {
+  color: rgb(140, 90, 90);
+  text-decoration: none;
+}
+
+.creatorSpan {
+  color: rgb(180, 120, 120);
+  font-weight: 600;
+}
+
+.meta {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.meta li {
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  font-weight: bold;
+  color: rgb(180, 120, 120); ;
+}
+
+.tagsRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: hidden;
+}
+
+.excludeButton {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease;
+  text-align: center;
+}
+
+.excludeButton:hover {
+  background-color: #c62828;
+}

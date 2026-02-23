@@ -5,9 +5,7 @@ import {
 import Post from "../models/post.model.js";
 import User from "../models/user.model.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
-import {
-  validateRequiredFields,
-} from "../validation/validateInputFields.js";
+import { validateRequiredFields } from "../validation/validateInputFields.js";
 
 export async function createPost(req, res, next) {
   const { title, body, tags } = req.body;

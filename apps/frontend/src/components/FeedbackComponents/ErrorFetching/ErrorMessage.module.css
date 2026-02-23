@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;             
+  height: 100vh;
+  padding: 2rem;
+  text-align: left;
+}
+
+.container img {
+  width: 720px;
+  max-width: 100%;
+  height: auto;
+}
+
+.container p {
+  font-size: 1.5rem;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;   
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .container img {
+    width: 320px;
+  }
+
+  .container p {
+    font-size: 1.2rem;
+  }
+}

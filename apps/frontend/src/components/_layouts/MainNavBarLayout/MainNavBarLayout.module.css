@@ -1,0 +1,96 @@
+
+.navBar {
+  width: 100%;
+  height: 6rem;
+  background-color: rgb(224, 209, 209);
+  z-index: 100;
+}
+
+.navContainer {
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgb(80, 77, 77);
+  text-decoration: none;
+}
+
+.yarn {
+  font-size: 2rem;
+}
+
+.actionButtons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.actionButtons a,
+.actionButtons button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(80, 77, 77);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.actionButtons a:hover,
+.actionButtons button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pageContent {
+  width: 100%;
+  padding: 2rem;
+
+}
+
+@media (max-width: 900px) {
+  .navContainer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .navBar {
+    height: auto;
+  }
+
+  .actionButtons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo span {
+    display: none; 
+  }
+
+  .yarn {
+    font-size: 1.6rem;
+  }
+}
