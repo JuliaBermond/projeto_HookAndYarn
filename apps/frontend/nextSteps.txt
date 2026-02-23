@@ -1,7 +1,0 @@
-
-//Segunda - Finalizar o frontend e colocar no github e testar - atualizar descrição, apagar bancco de dados;
-//ver todos os arquivos para ver se estão certos.
-/continuar ARCO
-
-
---> colocar criador do favicon na descrição do projeto<a href="https://www.flaticon.com/free-icons/handmade" title="handmade icons">Handmade icons created by Freepik - Flaticon</a>
